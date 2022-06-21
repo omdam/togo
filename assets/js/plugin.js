@@ -40,6 +40,25 @@ function preloadImage(img) {
 jQuery(document).ready(function ($) {
     /********************************
      *
+     *-scroll to the section  *
+     *
+     ********************************/
+
+    $(".nav-list-om > li > a").click(function (e) {
+        e.preventDefault();
+
+        let section_id = $(this).attr("href");
+
+        $("html, body").animate(
+            {
+                scrollTop: $(section_id).offset().top,
+            },
+            2000
+        );
+    });
+
+    /********************************
+     *
      *-slider-om  *
      *
      ********************************/
@@ -260,11 +279,10 @@ jQuery(document).ready(function ($) {
 
         if (e.target.files[0]) {
             fileName = e.target.files[0].name;
-            elementToTakeFileVal.addClass("active")
+            elementToTakeFileVal.addClass("active");
         } else {
-            elementToTakeFileVal.removeClass("active")
+            elementToTakeFileVal.removeClass("active");
         }
-
 
         elementToTakeFileVal.text(fileName);
     });
