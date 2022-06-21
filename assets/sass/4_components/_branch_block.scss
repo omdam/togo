@@ -1,0 +1,46 @@
+.branch_block__ {
+    padding: 68px 26px 32px 38px;
+    border-radius: 29px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(#AEAEAE, 0.16);
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    
+    .head_ {
+        font-size: 18px;
+        font-weight: bold;
+        color: $h_color_1;
+    }
+
+    .figure-om {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        border: 1px solid $color_2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: absolute;
+        top: -31px;
+        left: 20px;
+        background-color: #fff;
+
+        @include dir {
+            right: 20px;
+            left: unset;
+        }
+        img{
+            max-width: 100%;
+        }
+
+    }
+    
+
+    .parg__ {
+        color: $p_color_1;
+        font-size: 15px;
+
+    }
+}

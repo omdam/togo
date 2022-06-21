@@ -1,0 +1,107 @@
+body {
+    font-size       : 18px;
+    font-family     : 'Cairo';
+    font-weight     : normal;
+    font-style      : normal;
+    line-height     : 1.8;
+    color           : $p_color_1;
+    background-color: #fff;
+}
+
+.overflow-body {
+    overflow: hidden;
+
+}
+
+p {
+    font-size: 18px;
+    color    : $p_color_1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $h_color_1;
+}
+
+.list-unstyled {
+    margin-bottom: 0;
+}
+
+
+
+
+.section-wraper-om {
+    padding         : 20px;
+    background-color: #fff;
+}
+
+svg {
+    max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.fix-om {
+    border          : none;
+    outline         : none;
+    background-color: transparent;
+    margin          : 0;
+    padding         : 0;
+    text-decoration : none;
+    list-style: none;
+
+    &:hover , &:focus {
+        outline        : none;
+        text-decoration: none;
+    }
+}
+
+
+.main_head__ {
+    font-size: 25px;
+    font-weight: bold;
+    color: $h_color_1;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    width: max-content;
+    margin-bottom: 78px;
+    position: relative;
+
+    @include sm {
+        margin-bottom: 50px;
+    }
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        width: 74px; 
+        height: 74px;
+        border-radius: 50%;
+        // background-color: #fff; 
+        border: 20px solid rgba($color_2, 0.11);
+        z-index: 1;
+        left: -25px;
+
+        @include dir {
+            left: unset;
+            right: -25px;
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+}
