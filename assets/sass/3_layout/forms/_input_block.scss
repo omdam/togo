@@ -1,12 +1,11 @@
 .input-om {
-    height          : 48px;
-    border-radius   : 30px;
-    border          : solid 1px #e8e8e8;
-    background-color: #fff;
+    height          : 60px;
+    border-radius   : 15px;
+    border          : solid 1px #F5F5F5;
+    background-color: #F5F5F5;
     outline         : none;
     width           : 100%;
     font-size       : 14px;
-    font-weight     : 300;
     font-style      : normal;
     color           : $h_color_1;
     padding         : 13px 16px;
@@ -21,7 +20,7 @@
     }
 
     &::placeholder {
-        color: rgba(36, 36, 36, 0.65);
+        color: #55575D;
     }
 
 }
