@@ -1,0 +1,42 @@
+.article_block__ {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(#aeaeae, 0.16);
+    position: relative;
+    margin-bottom: 30px;
+    margin-bottom: 16px;
+    display: block;
+    text-decoration: none !important;
+
+    .head_ {
+        font-size: 18px;
+        font-weight: bold;
+        color: $h_color_1;
+        transition: 0.5s;
+    }
+
+    .figure-om {
+        padding-bottom: 70%;
+        margin-bottom: 25px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .parg__ {
+        color: $p_color_1;
+        font-size: 15px;
+    }
+
+
+    &:hover {
+        .head_ {
+            color: $color_2 ;
+        }
+        .figure-om {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

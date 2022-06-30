@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
      *-slider-om  *
      *
      ********************************/
-    new Swiper(".home_our_branches_ .swiper-container", {
+    new Swiper(".home_our_articles_ .swiper-container", {
         spaceBetween: 16,
         slidesPerView: 3,
 
@@ -71,12 +71,12 @@ jQuery(document).ready(function ($) {
             disableOnInteraction: false,
         },
         pagination: {
-            el: ".home_our_branches_ .swiper-pagination",
+            el: ".home_our_articles_ .swiper-pagination",
             clickable: true,
         },
         navigation: {
-            nextEl: ".home_our_branches_ .swiper-button-next",
-            prevEl: ".home_our_branches_ .swiper-button-prev",
+            nextEl: ".home_our_articles_ .swiper-button-next",
+            prevEl: ".home_our_articles_ .swiper-button-prev",
         },
 
         breakpoints: {
